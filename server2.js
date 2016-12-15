@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 //MongoDB
-mongoose.connect('mongodb://localhost/rest_test');
+//mongoose.connect('mongodb://localhost/rest_test');
 
 //Express
 var app = express();
@@ -17,7 +17,7 @@ app.get('/', function(req,res){
 
 
 //Routes
-app.use('/api', require('./routes/api'));
+//app.use('/api', require('./routes/api'));
 
 
 
