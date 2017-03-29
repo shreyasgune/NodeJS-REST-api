@@ -2,7 +2,7 @@
   "name": "Node-APIs",
   "version": "0.0.1",
   "main": "server2.js",
-  "start": "node server2.js",
+  "scripts": { "start" : "node server2.js" },
   "dependencies": {
     "body-parser": "^1.12.0",
     "express": "^4.8.7",
