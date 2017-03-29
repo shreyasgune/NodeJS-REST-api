@@ -90,5 +90,12 @@ docker build -t shreyasgune/nodeserver .
 docker-compose -f docker-compose.yml up
 
 ```
-
+# Jenkins Plug
+```
+scp Dockerfile "<host>@<yourip>:/home/<host>/git-test"
+ssh <host>@<yourip> "sudo docker-compose -f docker-compose.yml down || true"
+ssh <host>@<yourip> "cd /home/<host>/git-test && docker build -t shreyasgune/nodeserver ."
+scp docker-compose.yml "<host>@<yourip>:/home/<host>/git-test"
+ssh <host>@<yourip> "cd /home/<host>/git-test && docker-compose -f docker-compose.yml up -d"
+```
 
