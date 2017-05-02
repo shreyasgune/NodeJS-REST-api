@@ -5,11 +5,6 @@ MAINTAINER Shreyas Gune
 
 USER root 
 
-ENV http_proxy="http://one.proxy.att.com:8080"
-ENV https_proxy="http://one.proxy.att.com:8080"
-ENV HTTPS_PROXY="http://one.proxy.att.com:8080"
-ENV HTTPS_PROXY="http://one.proxy.att.com:8080"
-
 RUN \
   apt-get update && \
   apt-get -y upgrade && \
