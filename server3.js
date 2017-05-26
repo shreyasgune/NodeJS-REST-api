@@ -11,6 +11,6 @@ app.get('/', function(req,res){
 });
 
 //Start Server
-app.listen(3100);
+app.listen(3300);
 console.log('API is running on 3300');
  
