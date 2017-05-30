@@ -12,5 +12,5 @@ app.get('/', function(req,res){
 
 //Start Server
 app.listen(8900);
-console.log('API is running on 8900');
+//console.log('API is running on 8900');
  
